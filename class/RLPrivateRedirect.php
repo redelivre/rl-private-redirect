@@ -16,9 +16,7 @@ class RLPrivateRedirect {
 	}
 	
 	public function init() {
-		if(class_exists('Groups_Post_Access')) {
-			add_filter('groups_post_access_user_can_read_post', array($this, 'groups_post_access_user_can_read_post'), 10, 3);
-		}
+		add_filter('groups_post_access_user_can_read_post', array($this, 'groups_post_access_user_can_read_post'), 10, 3);
 	}
 	
 	public function groups_post_access_user_can_read_post($result, $post_id, $user_id) {
