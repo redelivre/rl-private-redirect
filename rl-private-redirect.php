@@ -11,3 +11,5 @@ Text Domain: rl-private-redirect
 Domain Path: /languages/
 
 */
+
+require_once plugin_dir_path( __FILE__ ).'/class/RLPrivateRedirect.php';
